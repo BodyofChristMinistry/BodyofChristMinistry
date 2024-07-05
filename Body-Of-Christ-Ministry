@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry of Dana Watts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4CAF50;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .video-container iframe {
+            width: 45%;
+            height: 300px;
+        }
+        .subscribe-form, .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .subscribe-form input, .contact-form input, .contact-form textarea {
+            margin: 5px 0;
+            padding: 10px;
+            width: 200px;
+        }
+        .contact-form textarea {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Dana Watts' Ministry</h1>
+    <p>Sharing the Word of God and walking together in faith</p>
+</header>
+
+<nav>
+    <a href="#bible-study">Bible Study</a>
+    <a href="#devotionals">Devotionals</a>
+    <a href="#videos">Videos</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="bible-study">
+    <h2>Bible Study</h2>
+    <p>Explore the deeper meanings of Scripture and learn how to apply God's Word in your life. Ask questions, join discussions, and grow in your faith.</p>
+    <a href="https://www.biblegateway.com/versions/King-James-Version-KJV-Bible/" target="_blank">Read the KJV Bible</a><br>
+    <a href="https://www.biblegateway.com/versions/New-International-Version-NIV-Bible/" target="_blank">Read the NIV Bible</a>
+</div>
+
+<div class="container" id="devotionals">
+    <h2>Devotionals</h2>
+    <p>Find inspiration and encouragement through our written and video devotionals. Stay connected with God's Word every day.</p>
+    <h3>Written Devotionals</h3>
+    <p>Devotional content goes here...</p>
+    <h3>Video Devotionals</h3>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="container" id="videos">
+    <h2>Video Bible Studies</h2>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact</h2>
+    <p>If you need someone to talk to or have questions about faith, feel free to reach out to me.</p>
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 Dana Watts. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
